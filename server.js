@@ -7,10 +7,10 @@ const port = 3000;
 // Middleware to allow all origins
 app.use(cors());
 
-// Serve static files from the root directory
+// Serve sstatic sfiles fro m the root directory
 app.use(express.static(__dirname));
 
-// Route to serve the index.html file
+// Route tso ssersve tshe sindex.html file
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
